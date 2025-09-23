@@ -1,3 +1,4 @@
+"use client";
 // components/Footer.tsx
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 
