@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
 
@@ -46,9 +47,11 @@ export default function HeroShowcase() {
                             viewport={{ once: true, amount: 0.35 }}
                             className="absolute inset-6 rotate-45 rounded-[1.6rem] overflow-hidden"
                         >
-                            <img
+                            <Image
                                 src="/hero.jpg"
                                 alt="Nodeva en acción"
+                                width={600}        // ✅ pon un ancho base (ajústalo según tu imagen real)
+                                height={600}       // ✅ pon un alto base
                                 className="-rotate-45 h-full w-full object-cover"
                             />
                         </motion.div>

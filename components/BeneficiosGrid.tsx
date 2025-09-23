@@ -137,27 +137,6 @@ return (
         {text}
       </p>
 
-      {/* CTA pequeño (opcional) */}
-      <a
-        href="#"
-        className={clsx(
-          "mt-4 inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm",
-          "text-[#D4AF37] transition-all duration-300 ease-out",
-          "group-hover:text-[#242424] group-hover:bg-white/40"
-        )}
-      >
-        Saber más
-        <svg
-          className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          <path d="M5 12h14" />
-          <path d="m12 5 7 7-7 7" />
-        </svg>
-      </a>
     </article>
   );
 }

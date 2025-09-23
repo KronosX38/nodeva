@@ -1,4 +1,7 @@
 "use client";
+import Link from "next/link";
+import Image from "next/image";
+
 // components/Footer.tsx
 import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 
@@ -8,7 +11,16 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 md:grid-cols-4">
         {/* Logo + claim */}
         <div>
-          <img src="/nodeva_bco.svg" alt="Nodeva" className="mb-4 h-10" />
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/nodeva_bco.svg"
+              alt="Nodeva"
+              width={120}   // ajusta a tu tamaño real
+              height={40}
+              priority
+              className="hidden h-15 w-auto sm:block"
+            />
+          </Link>
           <p className="text-sm text-neutral-400">
             Conectamos ideas. Creamos resultados.
           </p>
@@ -19,29 +31,29 @@ export default function Footer() {
           <h4 className="mb-4 font-semibold text-neutral-100">Navegación</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/servicios" className="hover:text-[#D4AF37]">
+              <Link href="/servicios" className="hover:text-[#D4AF37]">
                 Servicios
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/nosotros" className="hover:text-[#D4AF37]">
+              <Link href="/nosotros" className="hover:text-[#D4AF37]">
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/blog" className="hover:text-[#D4AF37]">
+              <Link href="/blog" className="hover:text-[#D4AF37]">
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contacto" className="hover:text-[#D4AF37]">
+              <Link href="/contacto" className="hover:text-[#D4AF37]">
                 Contáctanos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/aviso-privacidad" className="hover:text-[#D4AF37]">
+              <Link href="/aviso-privacidad" className="hover:text-[#D4AF37]">
                 Aviso de privacidad
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

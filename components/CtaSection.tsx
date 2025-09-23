@@ -1,4 +1,4 @@
-
+"use client";
 // components/CtaSection.tsx
 import Image from "next/image";
 

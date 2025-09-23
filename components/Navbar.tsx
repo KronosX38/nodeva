@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { LuPalette, LuGlobe, LuLaptop, LuArmchair, LuUsers, LuCloud } from "react-icons/lu";
 
@@ -120,13 +122,26 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
-          <a href="/" className="flex items-center gap-3">
-            <img src="/nodeva_bco.svg" alt="Nodeva" className="hidden h-17 w-auto sm:block" />
-            <img src="/nodeva_mov.svg" alt="Nodeva" className="h-8 w-auto sm:hidden" />
-          </a>
-
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/nodeva_bco.svg"
+              alt="Nodeva"
+              width={120}   // ajusta al tamaño real de tu logo
+              height={68}
+              className="hidden h-17 w-auto sm:block"
+              priority
+            />
+            <Image
+              src="/nodeva_mov.svg"
+              alt="Nodeva"
+              width={80}   // ajusta al tamaño real de tu logo móvil
+              height={32}
+              className="h-8 w-auto sm:hidden"
+              priority
+            />
+          </Link>
           <nav className="hidden items-center gap-7 md:flex">
-            <a href="/" className="text-sm text-neutral-200 hover:text-[#D4AF37]">Inicio</a>
+            <Link href="/" className="text-sm text-neutral-200 hover:text-[#D4AF37]">Inicio</Link>
 
             <div
               className="relative"
@@ -180,9 +195,9 @@ export default function Navbar() {
               )}
             </div>
 
-            <a href="/nosotros" className="text-sm text-neutral-200 hover:text-[#D4AF37]">Nosotros</a>
-            <a href="/blog" className="text-sm text-neutral-200 hover:text-[#D4AF37]">Blog</a>
-            <a href="/contacto" className="text-sm text-neutral-200 hover:text-[#D4AF37]">Contáctanos</a>
+            <Link href="/nosotros" className="text-sm text-neutral-200 hover:text-[#D4AF37]">Nosotros</Link>
+            <Link href="/blog" className="text-sm text-neutral-200 hover:text-[#D4AF37]">Blog</Link>
+            <Link href="/contacto" className="text-sm text-neutral-200 hover:text-[#D4AF37]">Contáctanos</Link>
           </nav>
 
           <div className="hidden md:block">
@@ -209,7 +224,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div ref={mobileRef} className="md:hidden">
           <div className="mx-3 mb-3 rounded-2xl border border-white/10 bg-[#242424] p-3">
-            <a href="/" className="block rounded-lg px-3 py-2 text-sm text-neutral-200 hover:bg-white/5">Inicio</a>
+            <Link href="/" className="block rounded-lg px-3 py-2 text-sm text-neutral-200 hover:bg-white/5">Inicio</Link>
             <details className="group">
               <summary className="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 text-sm text-neutral-200 hover:bg-white/5">
                 <span>Servicios</span>
@@ -236,9 +251,9 @@ export default function Navbar() {
               </div>
             </details>
 
-            <a href="/nosotros" className="mt-1 block rounded-lg px-3 py-2 text-sm text-neutral-200 hover:bg-white/5">Nosotros</a>
-            <a href="/blog" className="block rounded-lg px-3 py-2 text-sm text-neutral-200 hover:bg-white/5">Blog</a>
-            <a href="/contacto" className="block rounded-lg px-3 py-2 text-sm text-neutral-200 hover:bg-white/5">Contáctanos</a>
+            <Link href="/nosotros" className="mt-1 block rounded-lg px-3 py-2 text-sm text-neutral-200 hover:bg-white/5">Nosotros</Link>
+            <Link href="/blog" className="block rounded-lg px-3 py-2 text-sm text-neutral-200 hover:bg-white/5">Blog</Link>
+            <Link href="/contacto" className="block rounded-lg px-3 py-2 text-sm text-neutral-200 hover:bg-white/5">Contáctanos</Link>
 
             <a
               href="https://wa.me/529994532800"
