@@ -122,7 +122,7 @@ export default function ServicesGrid() {
               show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
             }}
             className="
-              group relative overflow-hidden rounded-2xl border border-white/10 bg-[#242424]
+              group relative overflow-hidden isolate rounded-2xl border border-white/10 bg-[#242424]
               p-5 md:p-6 transition duration-300 hover:border-[#D4AF37]/60
             "
           >

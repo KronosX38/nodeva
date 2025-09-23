@@ -45,7 +45,7 @@ export default function HeroShowcase() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.35 }}
-                            className="absolute inset-6 rotate-45 rounded-[1.6rem] overflow-hidden"
+                            className="absolute inset-6 rotate-45 rounded-[1.6rem] overflow-hidden isolate"
                         >
                             <Image
                                 src="/hero.jpg"
