@@ -6,9 +6,9 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 
 export default function HeroShowcase() {
     return (
-        <section className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <section className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-24 overflow-hidden isolate">
             {/* Glow dorado al fondo (no interfiere con clicks) */}
-            <div className="pointer-events-none absolute -top-10 right-[-12%] h-[420px] w-[420px] rounded-full bg-[#D4AF37]/10 blur-3xl" />
+            <div className="pointer-events-none absolute -top-10 right-[-12%] h-[420px] w-[420px] rounded-full bg-[#D4AF37]/10 blur-3xl overflow-hidden" />
 
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16 lg:gap-24 xl:gap-28">
                 {/* ===== VISUAL (ROMBO) — móvil primero / desktop a la derecha ===== */}
@@ -28,7 +28,7 @@ export default function HeroShowcase() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.05, duration: 0.7, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.35 }}
-                            className="absolute inset-0 rotate-45 rounded-[2.2rem] border border-white/10 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]"
+                            className="absolute overflow-hidden inset-0 rotate-45 rounded-[2.2rem] border border-white/10 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)]"
                         />
                         {/* borde interior (dorado) */}
                         <motion.div
@@ -36,7 +36,7 @@ export default function HeroShowcase() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.12, duration: 0.65, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.35 }}
-                            className="absolute inset-3 rotate-45 rounded-[2rem] border border-[#D4AF37]/90"
+                            className="absolute overflow-hidden inset-3 rotate-45 rounded-[2rem] border border-[#D4AF37]/90"
                         />
 
                         {/* Contenedor de imagen recortada (rombo) */}
@@ -45,7 +45,7 @@ export default function HeroShowcase() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
                             viewport={{ once: true, amount: 0.35 }}
-                            className="absolute inset-6 rotate-45 rounded-[1.6rem] overflow-hidden isolate"
+                            className="absolute inset-6 rotate-45 rounded-[1.6rem] overflow-hidden "
                         >
                             <Image
                                 src="/hero.jpg"

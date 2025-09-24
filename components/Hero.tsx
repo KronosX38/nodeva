@@ -16,9 +16,9 @@ export default function Hero() {
           className="object-cover"
         />
         {/* Degradado oscuro para legibilidad */}
-        <div className="absolute inset-0 bg-[#0b0b0b]/55" />
+        <div className="absolute overflow-hidden inset-0 bg-[#0b0b0b]/55" />
         {/* Barrido/gradiente sutil con el dorado */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#0b0b0b]/40 via-transparent to-[#D4AF37]/10" />
+        <div className="absolute overflow-hidden isolate inset-0 bg-gradient-to-tr from-[#0b0b0b]/40 via-transparent to-[#D4AF37]/10" />
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -79,7 +79,7 @@ export default function Hero() {
       </div>
 
       {/* Sombra inferior suave para separar del siguiente bloque */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-b from-transparent to-[#242424]" />
+      <div className="pointer-events-none absolute overflow-hidden inset-x-0 bottom-0 h-10 bg-gradient-to-b from-transparent to-[#242424]" />
     </section>
   );
 }
