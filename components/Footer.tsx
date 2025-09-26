@@ -12,13 +12,23 @@ export default function Footer() {
         {/* Logo + claim */}
         <div>
           <Link href="/" className="flex items-center gap-3">
+            {/* Desktop / tablet */}
             <Image
               src="/nodeva_bco.svg"
               alt="Nodeva"
-              width={120}   // ajusta a tu tamaño real
+              width={120}
               height={40}
               priority
-              className="hidden h-15 w-auto sm:block"
+              className="hidden sm:block h-auto w-[120px]"
+            />
+            {/* Móvil */}
+            <Image
+              src="/nodeva_mov.svg"
+              alt="Nodeva"
+              width={96}
+              height={32}
+              priority
+              className="block sm:hidden h-auto w-[96px]"
             />
           </Link>
           <p className="text-sm text-neutral-400">
@@ -31,18 +41,8 @@ export default function Footer() {
           <h4 className="mb-4 font-semibold text-neutral-100">Navegación</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/servicios" className="hover:text-[#D4AF37]">
-                Servicios
-              </Link>
-            </li>
-            <li>
               <Link href="/nosotros" className="hover:text-[#D4AF37]">
                 Nosotros
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog" className="hover:text-[#D4AF37]">
-                Blog
               </Link>
             </li>
             <li>

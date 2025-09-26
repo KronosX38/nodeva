@@ -48,11 +48,11 @@ export default function HeroShowcase() {
                             className="absolute inset-6 rotate-45 rounded-[1.6rem] overflow-hidden "
                         >
                             <Image
-                                src="/hero.jpg"
+                                src="/hero-shot.jpg"
                                 alt="Nodeva en acción"
-                                width={600}        // ✅ pon un ancho base (ajústalo según tu imagen real)
-                                height={600}       // ✅ pon un alto base
-                                className="-rotate-45 h-full w-full object-cover"
+                                width={800}        // ✅ pon un ancho base (ajústalo según tu imagen real)
+                                height={800}       // ✅ pon un alto base
+                                className="-rotate-45 h-full w-full object-none"
                             />
                         </motion.div>
                     </div>

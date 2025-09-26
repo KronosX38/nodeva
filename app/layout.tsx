@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import BackToTop from "@/components/BackToTop";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,7 +22,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="overflow-x-hidden bg-[#242424] text-white antialiased font-sans">
         <Navbar />
         {children}
+        <BackToTop />
       </body>
     </html>
   );
 }
+

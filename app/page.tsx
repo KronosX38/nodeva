@@ -3,6 +3,7 @@ import HeroShowcase from "@/components/HeroShowcase";
 import ServicesGrid from "@/components/ServicesGrid";
 import BeneficiosGrid from "@/components/BeneficiosGrid";
 import ProcessSteps from "@/components/ProcessSteps";
+import TechMarquee from "@/components/TechMarquee";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,8 @@ export default function HomePage() {
       <BeneficiosGrid />
       {/* Proceso de trabajo */}
       <ProcessSteps />
+      {/* Tecnologías que dominamos */}
+      <TechMarquee />
       {/* Call to action final */}
       <CtaSection />
       {/* Footer */}
