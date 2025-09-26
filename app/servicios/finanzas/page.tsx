@@ -1,3 +1,4 @@
+"use client";
 // app/servicios/finanzas/page.tsx
 import ServicePage from "@/components/ServicePage";
 import CTABanner from "@/components/CTABanner";

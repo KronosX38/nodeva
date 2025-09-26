@@ -1,3 +1,4 @@
+"use client";
 import { Layers, Boxes, ServerCog, ShieldCheck } from "lucide-react";
 import ServicePage from "@/components/ServicePage";
 import CTABanner from "@/components/CTABanner";

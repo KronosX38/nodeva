@@ -1,3 +1,4 @@
+"use client";
 import { CloudCog, Shield, Database, Activity } from "lucide-react";
 import ServicePage from "@/components/ServicePage";
 import CTABanner from "@/components/CTABanner";
